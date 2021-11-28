@@ -1,0 +1,118 @@
+#:kivy 2.0.0
+<MyGridLayout>:
+    
+    bodyweight:bodyweight
+    normal_beer:normal_beer
+    strong_beer:strong_beer
+    wine:wine
+    shots:shots
+    cocktail:cocktail
+    rtd:rtd
+    hours:hours
+    button:button
+
+    GridLayout:
+        cols: 1
+        size: root.width, root.height
+
+        Label:
+            text: 'Bodyweight:'
+            font_size: '20sp'
+
+        TextInput:
+            id: bodyweight
+            text: '0'
+            multiline: False
+            font_size: '20sp'
+            input_filter: 'int'
+    
+        Label:
+            text: 'Normal beer (33cl):'
+            font_size: '20sp'
+
+        TextInput:
+            id: normal_beer
+            text: '0'
+            multiline: False
+            font_size: '20sp'
+            input_filter: 'int'
+        
+        Label:
+            text:  'Strong beer (33cl):'
+            font_size: '20sp'
+
+        TextInput:
+            id: strong_beer
+            text: '0'
+            multiline: False
+            font_size: '20sp'
+            input_filter: 'int'
+        
+        Label:
+            text: 'Wine (12cl):'
+            font_size: '20sp'
+
+        TextInput:
+            id: wine
+            text: '0'
+            multiline: False
+            font_size: '20sp'
+            input_filter: 'int'
+
+        Label:
+            text: 'Cocktail (4cl):'
+            font_size: '20sp'
+
+        TextInput:
+            id: cocktail
+            text: '0'
+            multiline: False
+            font_size: '20sp'
+            input_filter: 'int'
+
+        Label:
+            text: 'RTD:'
+            font_size: '20sp'
+
+        TextInput:
+            id: rtd
+            text: '0'
+            multiline: False
+            font_size: '20sp'
+            input_filter: 'int'
+
+        Label:
+            text: 'Shots:'
+            font_size: '20sp'
+
+        TextInput:
+            id: shots
+            text: '0'
+            multiline: False
+            font_size: '20sp'
+            input_filter: 'int'
+    
+        
+        Label:
+            text: 'Hours since you started drinking:'
+            font_size: '20sp'
+        TextInput:
+            id: hours
+            text: '0'
+            multiline: False
+            font_size: '20sp'
+            input_filter: 'int'
+                
+        Spinner:
+            id: spinner_id
+            height: '40sp'
+            text: 'Select a sex'
+            values: ['Man', 'Woman']
+            on_text: self.text
+
+        Button:
+            id: button
+            text: 'Calculate'
+            font_size: '32sp'
+            on_press: root.calculate()
+
