@@ -17,102 +17,109 @@
 
         Label:
             text: 'Bodyweight:'
-            font_size: '20sp'
+            font_size: '14sp'
 
         TextInput:
             id: bodyweight
             text: '0'
             multiline: False
-            font_size: '20sp'
+            font_size: '14sp'
             input_filter: 'int'
     
         Label:
             text: 'Normal beer (33cl):'
-            font_size: '20sp'
+            font_size: '14sp'
 
         TextInput:
             id: normal_beer
             text: '0'
             multiline: False
-            font_size: '20sp'
+            font_size: '14sp'
             input_filter: 'int'
         
         Label:
             text:  'Strong beer (33cl):'
-            font_size: '20sp'
+            font_size: '14sp'
 
         TextInput:
             id: strong_beer
             text: '0'
             multiline: False
-            font_size: '20sp'
+            font_size: '14sp'
             input_filter: 'int'
         
         Label:
             text: 'Wine (12cl):'
-            font_size: '20sp'
+            font_size: '14sp'
 
         TextInput:
             id: wine
             text: '0'
             multiline: False
-            font_size: '20sp'
+            font_size: '14sp'
             input_filter: 'int'
 
         Label:
             text: 'Cocktail (4cl):'
-            font_size: '20sp'
+            font_size: '14sp'
 
         TextInput:
             id: cocktail
             text: '0'
             multiline: False
-            font_size: '20sp'
+            font_size: '14sp'
             input_filter: 'int'
 
         Label:
             text: 'RTD:'
-            font_size: '20sp'
+            font_size: '14sp'
 
         TextInput:
             id: rtd
             text: '0'
             multiline: False
-            font_size: '20sp'
+            font_size: '14sp'
             input_filter: 'int'
 
         Label:
             text: 'Shots:'
-            font_size: '20sp'
+            font_size: '14sp'
 
         TextInput:
             id: shots
             text: '0'
             multiline: False
-            font_size: '20sp'
+            font_size: '14sp'
             input_filter: 'int'
     
         
         Label:
             text: 'Hours since you started drinking:'
-            font_size: '20sp'
+            font_size: '14sp'
+
         TextInput:
             id: hours
             text: '0'
             multiline: False
-            font_size: '20sp'
+            font_size: '14sp'
             input_filter: 'int'
+
+        Label:
+            text: ''
                 
         Spinner:
             id: spinner_id
-            height: '40sp'
+            height: '14sp'
             text: 'Select a sex'
             values: ['Man', 'Woman']
             on_text: self.text
 
+        Label:
+            text: ''
+
         Button:
             id: button
             text: 'Calculate'
-            font_size: '32sp'
+            font_size: '20sp'
             on_press: root.calculate()
 
