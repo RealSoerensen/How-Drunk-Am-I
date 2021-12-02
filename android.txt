@@ -1,3 +1,0 @@
-title=HowDrunkAmI?
-author=Soerensen
-orientation=portrait
